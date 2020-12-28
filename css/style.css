@@ -29,6 +29,12 @@ p {
     white-space: normal;
     text-overflow: ellipsis;
     background: linear-gradient(blue, white);
+    /* transform: scale(2,2); */
+    /* transform: skewX(10deg); */
+    /* transform: skew(10deg, 10deg); */
+    /* transform: rotateX(30deg); */
+    /* transform: rotateY(30deg); */
+    
 }
 .bluebox:hover {
     overflow: scroll;
@@ -54,19 +60,25 @@ p {
     z-index: 0; */
     /* word-break: break-all; */
     /* word-wrap: break-word; */
+    animation: myanimation 3s;
+}
+@keyframes myanimation {
+    from{background: green}
+    to{background: red}
+    
 }
 .yellowbox:hover {
     overflow: scroll;
 }
 .greenbox {
     /* background: radial-gradient(circle, #31af31, white,#31af31); */
-    background-color: blue;
-    height: auto;
-    width: auto;
+    background-color: green;
+    height: 100px;
+    width: 100px;
     padding: 40px 16px;
     text-decoration: overline;
     text-align: center;
-    transform: rotate(30deg)
+    /* transform: translate(40px); */
     /* letter-spacing: 10px;
     text-shadow: 20px 10px black; */
     /* border-width: 18px 20px;
@@ -77,7 +89,14 @@ p {
     position: absolute;
     top: 40px;
     left: 40px; */
+    /* transition: width 1s, height 1s, transform 1s; */
 }
+/* .greenbox:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotateX(180deg); 
+}*/
+
 .great {
     background-color: #5a3479;
     /* display: block; */
@@ -107,12 +126,6 @@ ul.list2 {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-ul.list2 li {
-    background-image: url(css/STS120LaunchHiRes-edit1.jpg);
-    background-repeat: no-repeat;
-    background-position: 0px center;
-    padding-left: 30px;
 }
 a:link {
     color:black;
